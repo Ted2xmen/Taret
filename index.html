@@ -44,7 +44,8 @@
 
     <script data-ad-client="ca-pub-9432854913576877" async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -75,11 +76,6 @@
 
                 <div class="swiper">
                     <ul class="swiper-wrapper">
-                        <li class="swiper-slide">
-                            <a class="text-sm font-medium" href="#">
-                                Efsane Ramazan İndirimleri Devam Ediyorr🎉 &rarr;
-                            </a>
-                        </li>
 
                         <li class="swiper-slide">
                             <a class="text-sm font-medium" target="_blank"
@@ -161,7 +157,10 @@
                         transform
                         tracking-relaxed
                         lg:pr-8
-                      "> TARET </a>
+                      ">
+                        <img src="https://taretet.com/assets/logo2.png" width="30%" alt="">
+
+                    </a>
                     <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
                         <svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8">
                             <path x-show="!open" fill-rule="evenodd"
@@ -222,21 +221,21 @@
     </section>
 
 
+    <section id="hero" class="container mx-auto grid py-12 place-content-center">
 
-    <section id="hero" class="container mx-auto grid min-h-screen place-content-center pb-20">
-        <div class="drop-shadow-xl py-24 px-8 rounded-2xl bg-slate-200 mx-auto">
+        <div class="drop-shadow-xl py-10 px-8 rounded-2xl bg-slate-200 mx-auto">
             <div class="px-2 grid grid-cols-1 lg:grid-cols-2 gap-y-8 gap-x-16 lg:items-center">
                 <div class=" mx-auto text-center lg:text-left lg:mx-0 lg:px-0">
-                    <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl">
+                    <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl animate__animated animate__fadeInDownBig ">
                         Tadına doyulmayan lezzetlerin adresi
                     </h2>
-                    <p class="mt-4 text-lg text-gray-500">
+                    <p class="mt-4 text-lg text-gray-500 ">
                         Modern Tesisimizde Hijyenik Koşullarda Sucuk, Sosis ve Salam Üretimi Yapılıp Soğuk Zincir
                         Bozulmadan
                         Tüketici ve Satış Noktalarına Ulaştırılmaktadır
                     </p>
                     <div class="pt-10">
-                        <h3 class="font-bold text-md text-gray-700">Satış Kanallarımız...</h3>
+                        <h3 class="font-bold text-md text-gray-700 ">Satış Kanallarımız...</h3>
                         <a class="inline-block p-2 m-2 rounded-lg"
                             href="https://www.trendyol.com/magaza/taret-et-ve-et-mamulleri-m-505324?sst=0"
                             target="_blank">
@@ -244,16 +243,16 @@
                                 class="w-24 " alt="trendyol">
                         </a>
 
-                        <a class="inline-block p-2 m-2 font-medium rounded-lg "
+                        <a class="inline-block p-2 m-2 font-medium rounded-lg"
                             href="https://www.hepsiburada.com/magaza/taret-et-ve-et-mamulleri" target="_blank">
 
                             <img src="https://seeklogo.com/images/H/hepsiburada-com-logo-DA6B8AEBD1-seeklogo.com.png"
-                                class="w-36 " alt="hepsiburada">
+                                class="w-36 hover:bg-red-200" alt="hepsiburada">
                         </a>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-1 lg:order-first">
-                    <a href="" class="relative block overflow-hidden bg-center bg-no-repeat bg-cover rounded-xl"
+                    <a href="#" class="relative block overflow-hidden bg-center bg-no-repeat bg-cover rounded-xl "
                         style="background-image: url(https://panel.shopalm.com/assets/product/E5194B1E7B5B449E1350AFA0E0B7488C.jpeg)">
                         <span
                             class="absolute z-10 inline-flex items-center px-3 py-1 text-xs font-semibold text-white bg-black rounded-full  right-4 top-4">
@@ -273,16 +272,17 @@
     </section>
 
 
+
     <section id="items"
         class="pt-12 container mx-auto pb-12 grid place-content-center drop-shadow-xl  rounded-2xl bg-slate-200">
         <div class="mx-auto px-8">
-            <h2 class="text-3xl text-center pb-8 font-bold">En Sevilenler</h2>
+            <h2 class="text-3xl text-center pb-8 font-bold animate__animated animate__backInLeft animate__delay-2s">En
+                Sevilenler</h2>
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:items-center">
 
                 <div class="block overflow-hidden group">
                     <div class=" overflow-hidden w-full">
-                        <img class="object-cover rounded-3xl w-72 h-52  "
-                            src="https://panel.shopalm.com/assets/product/9B8F5DAC6661C2F6513495A9E6FC9021.jpeg"
+                        <img class="object-cover rounded-3xl w-72 h-52  " src="src/images/taret-parmak.jpeg"
                             alt="parmak sucuk" />
                     </div>
                     <div class="relative pt-4">
@@ -339,12 +339,15 @@
 
     </section>
 
+
+
     <section id="about" class="py-12 container mx-auto ">
 
         <div class="px-8 py-10 grid place-content-center mx-auto drop-shadow-xl rounded-3xl bg-slate-200">
 
             <div class="flex">
-                <h2 class="pt-5 text-3xl font-bold px-4">İmalathanemiz</h2>
+                <h2 class="pt-5 text-3xl font-bold px-4 animate__animated animate__backInRight animate__delay-2s">
+                    İmalathanemiz</h2>
                 <a href="https://goo.gl/maps/LaHCZmVgFWeGHu1F9" target="_blank"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1200px-Google_Maps_icon_%282020%29.svg.png"
                         class="w-8 mt-3 h-12" alt=""></a>
@@ -352,20 +355,23 @@
 
             <div class="pt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
                 <div class="block">
-                    <img src="https://taretet.com/assets/01taret.jpeg" alt=""
-                        class="object-cover w-full h-72 rounded-3xl" />
+                    <img src="src/images/taret-01.jpeg" alt="" class="object-cover w-full h-72 rounded-3xl" />
                 </div>
                 <div class="block">
-                    <img src="https://taretet.com/assets/01taret.jpeg" alt=""
-                        class="object-cover w-full h-72 rounded-3xl" />
+                    <img src="src/images/taret-02.jpeg" alt="" class="object-cover w-full h-72 rounded-3xl" />
                 </div>
-                <div class="block">
-                    <img src="https://taretet.com/assets/03taret.jpeg" alt=""
-                        class="object-cover w-full h-72 rounded-3xl" />
+                <div class="block pt-4">
+                    <!-- <img src="src/images/taret-03.jpeg" alt="" class="object-cover w-full h-72 rounded-3xl" /> -->
+                    <iframe
+                        src="https://www.facebook.com/plugins/video.php?height=317&href=https%3A%2F%2Fwww.facebook.com%2FETTARET%2Fvideos%2F154741656792216%2F&show_text=false&width=560&t=0"
+                        width="400" height="320" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
                 </div>
 
             </div>
     </section>
+
+
 
 
 
